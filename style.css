@@ -1,0 +1,2031 @@
+/*
+    WEB FUNDEMENTALS PROJECT 
+        Done By:
+        #Mayyar Sakhnini - 202200225.
+        #Khadija Abdulla - 202201013.
+        #Manar Alsetrawi - 202200412.
+        #Ayah Meftah     - 202201592.
+        #Alaa Aljamri    - 202201043.
+
+    CSS File for the all pages - style.css
+*/
+
+/* Pages Body Styling */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #EEEAE6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* HTML file */
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    margin: 0;
+}
+
+#container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(7, auto-fit);
+    grid-template-columns: 1fr;
+}
+
+#container_sub{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, auto-fit);
+    grid-template-columns: 1fr;
+}
+
+#container_our_mock{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, auto-fit);
+    grid-template-columns: 1fr;
+}
+
+.header{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: white;
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(225px, 1fr) minmax(680px, 2.8fr) minmax(300px, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.logo{
+    grid-area: 1 / 1 / 2 / 2; 
+    padding-left: 4%;
+    padding-top: 1%;
+}
+
+#logopic{
+    width: 21%;
+}
+
+#logoname{
+    width: 57%; 
+}
+
+.menu{
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 110%;
+    padding-left: 2.5%;
+    padding-top: 1.5%;
+}
+  
+.menu a{
+    float: left;
+    font-size: 140%;
+    color: #9c6644;
+    text-align: center;
+    padding: 0.8750em 1em;
+    text-decoration: none;
+}
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropmain {
+    font-size: 140%;  
+    border: none;
+    outline: none;
+    color: #9c6644;
+    font-family: inherit;
+    padding: 0.8750em 1em;
+    margin: 0;
+    background-color: white;
+}
+  
+.menu a:hover, .dropdown:hover .dropmain:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdowncontent a {
+    font-size: 1.2em;
+    float: none;
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdowncontent a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+  
+.dropdown:hover .dropdowncontent {
+    display: block;
+    cursor: pointer;
+}
+
+.right_header{
+    grid-area: 1 / 3 / 2 / 4;
+    padding-top: 7%;
+}
+
+#wishlist{
+    width: 14%;
+}
+
+#wishlist:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
+#cart{
+    width: 13%;
+    padding-left: 2%;
+}
+
+#cart:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
+#user{
+    width: 13%;
+    padding-left: 2%;
+}
+
+.right_header a{
+    float: right;
+    margin-top: 5%;
+    margin-right: 10%;
+    text-decoration: none;
+    color: black;
+    font-size: 128%;
+}
+
+.right_header a:hover{
+    color: #808080;
+    text-decoration: underline;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+#username{
+    float: right;
+    margin-top: 10px;
+    margin-right: 12%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.homepg{
+    overflow: hidden;
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: gray;
+    width: 100%;
+    height: auto-fit;
+    display: grid;
+    grid-template-columns: minmax(400px, 1fr) minmax(400px, 1.35fr);
+    grid-template-rows: 1fr;
+}
+
+#home1{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#home1 img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+#home2{
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#home2 img{
+    width:100%;
+    grid-area: 1 / 1 / 5 / 6;
+}
+
+#searchBar{
+    grid-area: 1 / 1 / 2 / 4;
+    margin-left: 6%;
+    margin-top: 4%;
+    z-index: 1;
+}
+
+.search{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    border-radius: 28px;
+    background-color: #f6f6f6;
+}
+
+.searchicon{
+    color: grey;
+}
+
+.searchinput{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 3%;
+}
+
+#shopnowlink{
+    grid-area: -2 / 2 / 5 / 5;
+    text-align: center;
+    font-size: 160%;
+    z-index: 1;
+}
+
+#shopnowlink a{
+    text-decoration: none;
+    color: white;
+    background-color: #3b404c;
+    padding: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 28px;
+}
+
+#shopnowlink a:hover{
+    background-color: white;
+    color: #3b404c;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#break1{
+    background-color: grey;
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#main{
+    grid-area: 4 / 1 / 5 / 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 30%);
+    grid-gap: 4em 0em;
+    margin: 3%;
+}
+
+#home_living, #home_bed, #home_kit{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr)) ;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1em 2em;
+}
+
+.main_living{
+    grid-area: 1 / 1 / 6 / 2 ;
+}
+
+.main_living img, .main_bedroom img, .main_kitchen img{
+    width: 100%;
+    height: 100%;
+}
+
+.main_living:hover, .main_bedroom:hover, .main_kitchen:hover{
+    box-shadow: 10px 10px 10px grey;
+    scale: 1.01;
+    cursor: pointer;
+}
+
+.main_kitchen{
+    grid-area: 1 / 1 / 6 / 2 ;
+}
+
+.main_sofas, .main_cabinets{
+    grid-area: 1 / 2 / 2 / 3 ;
+}
+
+.main_displayunits, .main_dine{
+    grid-area: 2 / 2 / 3 / 3 ;
+}
+
+.main_coffeeside, .main_islands{
+    grid-area: 3 / 2 / 4 / 3 ;
+}
+
+.main_shelving, .main_shelves{
+    grid-area: 4 / 2 / 5 / 3 ;
+}
+
+.main_curtains, .main_blinds{
+    grid-area: 5 / 2 / 6 / 3 ;
+}
+
+.main_bedroom{
+    grid-area: 1 / 2 / 6 / 3;
+}
+
+.main_beds{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.main_wardrobes{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.main_desks{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.main_drawes{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.main_chairs{
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.category{
+    background-color: #b7a9a0;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 5%;
+}
+
+.category a{
+    text-decoration: none;
+    color: black;
+}
+
+.category:hover{
+    box-shadow: 6px 6px 6px grey;
+    scale: 1.03;
+    cursor: pointer;
+}
+
+#break2{
+    background-color: grey;
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.reg_form{
+    grid-area: 6 / 1 / 7 / 2;
+    background-image: url(images/formbg.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.4fr minmax(350px, 3fr) 0.4fr;
+    grid-template-rows: 0.1fr minmax(100px, 1fr) 0.1fr;
+}
+
+.details{
+    grid-area: 2 / 2 / 3 / 3;
+    height: 90%;
+    background-color: #b7a9a0;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#formtitle{
+    grid-area: 1 / 1 / 2 / 3;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    font-size: 3em;
+    color: whitesmoke;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: bold;
+}
+
+p{
+    margin: 0;
+}
+
+#fn{
+    grid-area: 2 / 1 / 3 / 2;
+    position: relative;
+    top: 10%;
+    left: 18%;
+}
+
+#ln{
+    grid-area: 2 / 2 / 3 / 3;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+#ps{
+    grid-area: 3 / 1 / 4 / 2;
+    position: relative;
+    top: 12%;
+    left: 18%;
+}
+
+#pn{
+    grid-area: 3 / 2 / 4 / 3;
+    position: relative;
+    left: 10%;
+    top: 11%;
+}
+
+#em{
+    grid-area: 4 / 1 / 5 / 3;
+    position: relative;
+    left: 9%;
+}
+
+#input1, #input2, #input3, #input4, #input5{
+    color:#8b0000;
+    font-size: 1.6em;
+    padding: 10px 10px 10px 12px;
+    position: relative;
+    width: 70%;
+    height: 35%;
+    border: 2px solid black;
+    background: white;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#input5{
+    width: 80.5%;
+    margin-top: 5%;
+}
+
+#input3, #input4{
+    margin-top: 3%;
+}
+   
+#label1, #label2, #label3, #label4, #label5{
+    color: grey;
+    font-size: 1.8em;
+    position: absolute;
+    pointer-events: none;
+    left: 3%;
+    top: 13%;
+    transition: 0.2s ease all;
+}
+
+#label3, #label4{
+    top: 25%;
+}
+
+#label5{
+    left: 1.5%;
+    top: 56%;
+}
+
+#input1:focus ~ #label1,
+#input1:valid ~ #label1,
+#input2:focus ~ #label2,
+#input2:valid ~ #label2{
+    top: -33%;
+    left: -0.5%;
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+}
+
+#input3:focus ~ #label3,
+#input3:valid ~ #label3,
+#input4:focus ~ #label4,
+#input4:valid ~ #label4{
+    top: -20%;
+    left: -0.5%;
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+}
+
+
+#input5:focus ~ #label5,
+#input5:valid ~ #label5{
+    top: -10%;
+    left: -0.2%;
+    margin-top: 2%;
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+}
+
+#submitbutton{
+    grid-area: 5 / 1 / 6 / 3;
+    height: 100%;
+    position: relative;
+}
+
+#submit_btn{
+    width: 12%;
+    height: 40%;
+    position: absolute;
+    top: 32%;
+    left: 45%;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+    background-color: whitesmoke;
+}
+
+#submit_btn:hover{
+    background-color: #49994c;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.footer_home{
+    grid-area: 7 / 1 / 8 / 2;
+}
+
+.footer_our_mock{
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: #7F5539;
+    height: 44%;
+    padding: 2%;
+    padding-top: 3%;
+}
+
+.footer{
+    background-color: #7F5539;
+    height: 44%;
+    padding: 2%;
+    padding-top: 3%;
+}
+
+.footer img{
+    float: left;
+    width: 3.5%;
+    padding: 0.2%;
+}
+
+.footer img:hover{
+    scale: 1.08;
+    cursor: pointer;
+}
+
+.footer p{
+    float: right;
+    padding-top: 1.2%;
+    color: white;
+    font-size: 1.2em;
+}
+
+.footer_sub{
+    grid-area: 5 / 1 / 6 / 2;
+    background-color: #7F5539;
+    height: 44%;
+    padding: 2%;
+    padding-top: 3%;
+}
+
+.living_sub_bg{
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(images/livingroombg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 35em;
+    display: grid;
+    grid-template-columns: 0.6fr minmax(600px, 2fr) 0.6fr;
+    grid-template-rows: 1.3fr 0.18fr 1fr;
+}
+
+.bed_sub_bg{
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(images/bedroombg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 35em;
+    display: grid;
+    grid-template-columns: 0.6fr minmax(600px, 2fr) 0.6fr;
+    grid-template-rows: 1.3fr 0.18fr 1fr;
+}
+
+.kitchen_sub_bg{
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(images/kitchenbg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 35em;
+    display: grid;
+    grid-template-columns: 0.6fr minmax(600px, 2fr) 0.6fr;
+    grid-template-rows: 1.3fr 0.18fr 1fr;
+}
+
+.makingOf_sub_bg{
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(images/makingOfbg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 35em;
+}
+
+.ourStory_sub_bg{
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(images/ourStorybg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 35em;
+}
+
+.our_story_cont{
+    grid-area: 3 / 1 / 4 / 2;
+    display: grid;
+    grid-template-rows: 20% 37% 28% 20%;
+    grid-template-columns: 1fr;
+    padding: 3% 8% 3% 8%;
+    grid-gap: 2em;
+    margin-bottom: 15%;
+}
+
+.our_story_cont h1{
+    text-align: left;
+    margin-bottom: 1%;
+    color: black;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.our_story_cont p{
+    font-size:20px;
+    padding: 30px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 1px 1px grey;
+    border-radius: 20px;
+}
+
+.sub_searchBar{
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.sub_search{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    border-radius: 28px;
+    background-color: #f6f6f6;
+}
+
+.catmenu{
+    grid-area: 3 / 1 / 4 / 2;
+    height: 6em;
+    margin-top: 2%;
+    margin-left: 0.3%;
+    margin-right: 0.3%;
+    margin-bottom: 1%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 01.5fr));
+    grid-gap: 0.3em;
+    text-align: center;
+}
+
+.cat1, .cat3, .cat5{
+    background-color: #b7a9a0;
+    padding-top: 10%;
+}
+
+.cat2, .cat4{
+    background-color: #beb7b3;
+    padding-top: 10%;
+}
+
+.cat a{
+    font-size: 1.6em;
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: black 1px 0 10px;
+}
+
+.cat a:hover{
+    color: black;
+    text-decoration: underline;
+    text-shadow: white 1px 0 10px;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+
+.products{
+    grid-area: 4 / 1 / 5 / 2;
+    display: grid;
+    grid-template-rows: repeat(5, auto-fit);
+}
+
+#category1, #category2, #category3, #category4, #category5{
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(1em, 45%));
+    grid-template-rows: 7% repeat(2, 42%) 20%;
+    grid-gap: 1.5em 1.5em;
+}
+
+#category2{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#category3{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#category4{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+#category5{
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.cat_name{
+    grid-area: 1 / 1 / 2 / 4;
+    padding-left: 40%;
+}
+
+#category2 .cat_name, #category4 .cat_name{
+    padding-left: 34%;
+}
+
+#category3 .cat_name{
+    padding-left: 36%;
+}
+
+#category5 .cat_name{
+    padding-left: 30%;
+}
+
+#curtainName, .kitchenCat3 .text_name, .kitchenCat4 .text_name{
+    padding-left: 10%;
+}
+
+.kitchenCat2 .text_name{
+    padding-left: 4%;
+}
+
+.kitchenCat5 .text_name{
+    padding-left: 18%;
+}
+
+.text_name a{
+    padding-top: 2%;
+    float: left;
+    font-size: 2.8em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bedCat3 .text_name, .bedCat5 .text_name{
+    padding-left: 7%;
+}
+
+.cat_icon img{
+    padding-left: 2%;
+    width: 6em;
+}
+
+#category2 .cat_icon{
+    padding-top: -1%;
+}
+
+.item{
+    border: 1px solid #d1cbc6;
+    border-radius: 30px;
+    background-color: #b7a9a0;
+}
+
+.item:hover{
+    box-shadow: 6px 6px 6px #808080;
+    cursor: pointer;
+}
+
+.itempic{
+    width: 100%;
+    height: 19em;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-bottom: 3%;
+}
+
+.pro_name{
+    text-align: center;
+    font-size: 2.1em;
+    font-weight: bold;
+    line-height: 0.8em;
+}
+
+.pro_name_con{
+    font-size: 0.5em;
+}
+
+#category1 .pro_name, .bedCat3 .item3 .pro_name{
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.pro_price{
+    float: right;
+    font-size: 1.5em;
+    padding-right: 5%;
+    padding-top: 4%;
+}
+
+.rating{
+    float: left;
+    padding-left: 5%;
+    padding-top: 5%;
+    color: #ffff00;
+}
+
+.bedCat1 .item3 .pro_price, .bedCat1 .item4 .pro_price, .bedCat1 .item6 .pro_price{
+    padding-top: 0.5em
+}
+
+.bedCat1 .item3 .rating, .bedCat1 .item4 .rating, .bedCat1 .item6 .rating{
+    padding-top: 1em;
+}
+
+.item1{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.item2{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.item3{
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.item4{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.item5{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.item6{
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.break{
+    grid-area: 4 / 1 / 5 / 4;
+}
+
+.itempic{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.livingCat1 .item1 .itempic{
+    background-image: url(images/Sofas/Armchair1beige.png);
+}
+
+.livingCat1 .item1 .itempic:hover{
+    background-image: url(images/Sofas/ArmchairInRoom.png);
+}
+
+.livingCat1 .item2 .itempic{
+    background-image: url(images/Sofas/TwoSeatsSofa1lightgreen.png);
+}
+
+.livingCat1 .item2 .itempic:hover{
+    background-image: url(images/Sofas/TwoInRoom.png);
+}
+
+
+.livingCat1 .item3 .itempic{
+    background-image: url(images/Sofas/CornerSofa1grey.png);
+}
+
+.livingCat1 .item3 .itempic:hover{
+    background-image: url(images/Sofas/CornerInRoom.png);
+}
+
+.livingCat1 .item4 .itempic{
+    background-image: url(images/Sofas/WingChair2red.png);
+}
+
+.livingCat1 .item4 .itempic:hover{
+    background-image: url(images/Sofas/WingInRoom.png);
+}
+
+.livingCat1 .item5 .itempic{
+    background-image: url(images/Sofas/ThreeSeatsSofa2blue.png);
+}
+
+.livingCat1 .item5 .itempic:hover{
+    background-image: url(images/Sofas/ThreeInRoom1.png);
+}
+
+.livingCat1 .item6 .itempic{
+    background-image: url(images/Sofas/ThreeSeatsSofa1beige.png);
+}
+
+.livingCat1 .item6 .itempic:hover{
+    background-image: url(images/Sofas/ThreeInRoom2.png);
+}
+
+.livingCat2 .item1 .itempic{
+    background-image: url(images/DisplayUnits/DisplayUnit1black.png);
+}
+
+.livingCat2 .item1 .itempic:hover{
+    background-image: url(images/DisplayUnits/dispUnit1InRoom.png);
+}
+
+.livingCat2 .item2 .itempic{
+    background-image: url(images/DisplayUnits/DisplayUnit2white.png);
+}
+
+.livingCat2 .item2 .itempic:hover{
+    background-image: url(images/DisplayUnits/dispUnit2InRoom.png);
+}
+
+.livingCat2 .item3 .itempic{
+    background-image: url(images/DisplayUnits/DisplayUnit3greyblack.png);
+}
+
+.livingCat2 .item3 .itempic:hover{
+    background-image: url(images/DisplayUnits/dispUnit3InRoom.png);
+}
+
+.livingCat2 .item4 .itempic{
+    background-image: url(images/DisplayUnits/DisplayUnit5white.png);
+}
+
+.livingCat2 .item4 .itempic:hover{
+    background-image: url(images/DisplayUnits/dispUnit4InRoom.png);
+}
+
+.livingCat2 .item5 .itempic{
+    background-image: url(images/DisplayUnits/DisplayUnit4grey.png);
+}
+
+.livingCat2 .item5 .itempic:hover{
+    background-image: url(images/DisplayUnits/dispUnit5InRoom.png);
+}
+
+.livingCat2 .item6 .itempic{
+    background-image: url(images/DisplayUnits/DisplayUnit6blackbrown.png);
+}
+
+.livingCat2 .item6 .itempic:hover{
+    background-image: url(images/DisplayUnits/dispUnit6InRoom.png);
+}
+
+.livingCat3 .item1 .itempic{
+    background-image: url(images/SideTables/sidetable1.png);
+}
+
+.livingCat3 .item1 .itempic:hover{
+    background-image: url(images/SideTables/side1InRoom.png);
+}
+
+.livingCat3 .item2 .itempic{
+    background-image: url(images/SideTables/sidetable2white.png);
+}
+
+.livingCat3 .item2 .itempic:hover{
+    background-image: url(images/SideTables/side2InRoom.png);
+}
+
+.livingCat3 .item3 .itempic{
+    background-image: url(images/SideTables/sidetable3beige.png);
+}
+
+.livingCat3 .item3 .itempic:hover{
+    background-image: url(images/SideTables/side3InRoom.png);
+}
+
+.livingCat3 .item4 .itempic{
+    background-image: url(images/SideTables/sidetable5brown.png);
+}
+
+.livingCat3 .item4 .itempic:hover{
+    background-image: url(images/SideTables/side4InRoom.png);
+}
+
+.livingCat3 .item5 .itempic{
+    background-image: url(images/SideTables/sidetable4whitebeige.png);
+}
+
+.livingCat3 .item5 .itempic:hover{
+    background-image: url(images/SideTables/side5InRoom.png);
+}
+
+.livingCat3 .item6 .itempic{
+    background-image: url(images/SideTables/sidetable6grey.png);
+}
+
+.livingCat3 .item6 .itempic:hover{
+    background-image: url(images/SideTables/side6InRoom.png);
+}
+
+.livingCat4 .item1 .itempic{
+    background-image: url(images/ShelvingUnits/SelvingUnit1lightbrown.png);
+}
+
+.livingCat4 .item1 .itempic:hover{
+    background-image: url(images/ShelvingUnits/sUnit1InRoom.png);
+}
+
+.livingCat4 .item2 .itempic{
+    background-image: url(images/ShelvingUnits/SelvingUnit2.png);
+}
+
+.livingCat4 .item2 .itempic:hover{
+    background-image: url(images/ShelvingUnits/sUnit2InRoom.png);
+}
+
+.livingCat4 .item3 .itempic{
+    background-image: url(images/ShelvingUnits/SelvingUnit4white.png);
+}
+
+.livingCat4 .item3 .itempic:hover{
+    background-image: url(images/ShelvingUnits/sUnit3InRoom.png);
+}
+
+.livingCat4 .item4 .itempic{
+    background-image: url(images/ShelvingUnits/SelvingUnit6darkbrown.png);
+}
+
+.livingCat4 .item4 .itempic:hover{
+    background-image: url(images/ShelvingUnits/sUnit4InRoom.png);
+}
+
+.livingCat4 .item5 .itempic{
+    background-image: url(images/ShelvingUnits/SelvingUnit3.png);
+}
+
+.livingCat4 .item5 .itempic:hover{
+    background-image: url(images/ShelvingUnits/sUnit5InRoom.png);
+}
+
+.livingCat4 .item6 .itempic{
+    background-image: url(images/ShelvingUnits/SelvingUnit5black.png);
+}
+
+.livingCat4 .item6 .itempic:hover{
+    background-image: url(images/ShelvingUnits/sUnit6InRoom.png);
+}
+
+.livingCat5 .item1 .itempic{
+    background-image: url(images/Curtains/curtain1grey.png);
+}
+
+.livingCat5 .item1 .itempic:hover{
+    background-image: url(images/Curtains/curtain1InRoom.png);
+}
+
+.livingCat5 .item2 .itempic{
+    background-image: url(images/Curtains/curtain2brown.png);
+}
+
+.livingCat5 .item2 .itempic:hover{
+    background-image: url(images/Curtains/curtain2InRoom.png);
+}
+
+.livingCat5 .item3 .itempic{
+    background-image: url(images/Curtains/curtain3turquoise.png);
+}
+
+.livingCat5 .item3 .itempic:hover{
+    background-image: url(images/Curtains/curtain3InRoom.png);
+}
+
+.livingCat5 .item4 .itempic{
+    background-image: url(images/Curtains/curtain4white.png);
+}
+
+.livingCat5 .item4 .itempic:hover{
+    background-image: url(images/Curtains/curtain4InRoom.png);
+}
+
+.livingCat5 .item5 .itempic{
+    background-image: url(images/Curtains/curtain5yellow.png);
+}
+
+.livingCat5 .item5 .itempic:hover{
+    background-image: url(images/Curtains/curtain5InRoom.png);
+}
+
+.livingCat5 .item6 .itempic{
+    background-image: url(images/Curtains/curtain6offwhite.png);
+}
+
+.livingCat5 .item6 .itempic:hover{
+    background-image: url(images/Curtains/curtain6InRoom.png);
+}
+
+.bedCat1 .item1 .itempic{
+    background-image: url(images/Beds/single1black.PNG);
+}
+
+.bedCat1 .item1 .itempic:hover{
+    background-image: url(images/Beds/single1InRoom.PNG);
+}
+
+.bedCat1 .item2 .itempic{
+    background-image: url(images/Beds/double1.png);
+}
+
+.bedCat1 .item2 .itempic:hover{
+    background-image: url(images/Beds/double1InRoom.png);
+}
+
+.bedCat1 .item3 .itempic{
+    background-image: url(images/Beds/king1.PNG);
+}
+
+.bedCat1 .item3 .itempic:hover{
+    background-image: url(images/Beds/king1InRoom.PNG);
+}
+
+.bedCat1 .item4 .itempic{
+    background-image: url(images/Beds/single2white.PNG);
+}
+
+.bedCat1 .item4 .itempic:hover{
+    background-image: url(images/Beds/single2InRoom.PNG);
+}
+
+.bedCat1 .item5 .itempic{
+    background-image: url(images/Beds/double2black.PNG);
+}
+
+.bedCat1 .item5 .itempic:hover{
+    background-image: url(images/Beds/double2InRoom.png);
+}
+
+.bedCat1 .item6 .itempic{
+    background-image: url(images/Beds/king2.PNG);
+}
+
+.bedCat1 .item6 .itempic:hover{
+    background-image: url(images/Beds/king2InRoom.PNG);
+}
+
+.bedCat2 .item1 .itempic{
+    background-image: url(images/Wardrobes/wardrobe1.PNG);
+}
+
+.bedCat2 .item1 .itempic:hover{
+    background-image: url(images/Wardrobes/wardrobe1InRoom.PNG);
+}
+
+.bedCat2 .item2 .itempic{
+    background-image: url(images/Wardrobes/wardrobe2.PNG);
+}
+
+.bedCat2 .item2 .itempic:hover{
+    background-image: url(images/Wardrobes/wardrobe2InRoom.PNG);
+}
+
+.bedCat2 .item3 .itempic{
+    background-image: url(images/Wardrobes/wardrobe3.PNG);
+}
+
+.bedCat2 .item3 .itempic:hover{
+    background-image: url(images/Wardrobes/wardrobe3InRoom.PNG);
+}
+
+.bedCat2 .item4 .itempic{
+    background-image: url(images/Wardrobes/wardrobe4.PNG);
+}
+
+.bedCat2 .item4 .itempic:hover{
+    background-image: url(images/Wardrobes/wardrobe4InRoom.PNG);
+}
+
+.bedCat2 .item5 .itempic{
+    background-image: url(images/Wardrobes/wardrobe5.PNG);
+}
+
+.bedCat2 .item5 .itempic:hover{
+    background-image: url(images/Wardrobes/wardrobe5InRoom.PNG);
+}
+
+.bedCat2 .item6 .itempic{
+    background-image: url(images/Wardrobes/wardrobe6.PNG);
+}
+
+.bedCat2 .item6 .itempic:hover{
+    background-image: url(images/Wardrobes/wardrobe6InRoom.PNG);
+}
+
+.bedCat3 .item1 .itempic{
+    background-image: url(images/Desks/desk1.PNG);
+}
+
+.bedCat3 .item1 .itempic:hover{
+    background-image: url(images/Desks/desk1InRoom.PNG);
+}
+
+.bedCat3 .item2 .itempic{
+    background-image: url(images/Desks/desk2black.PNG);
+}
+
+.bedCat3 .item2 .itempic:hover{
+    background-image: url(images/Desks/desk2blackInRoom.PNG);
+}
+
+.bedCat3 .item3 .itempic{
+    background-image: url(images/Desks/desk3white.PNG);
+}
+
+.bedCat3 .item3 .itempic:hover{
+    background-image: url(images/Desks/desk3whiteInRoom.PNG);
+}
+
+.bedCat3 .item4 .itempic{
+    background-image: url(images/Desks/desk4.PNG);
+}
+
+.bedCat3 .item4 .itempic:hover{
+    background-image: url(images/Desks/desk4InRoom.PNG);
+}
+
+.bedCat3 .item5 .itempic{
+    background-image: url(images/Desks/desk5.PNG);
+}
+
+.bedCat3 .item5 .itempic:hover{
+    background-image: url(images/Desks/desk5InRoom.PNG);
+}
+
+.bedCat3 .item6 .itempic{
+    background-image: url(images/Desks/desk6white.PNG);
+}
+
+.bedCat3 .item6 .itempic:hover{
+    background-image: url(images/Desks/desk6whiteInRoom.PNG);
+}
+
+.bedCat4 .item1 .itempic{
+    background-image: url(images/Drawers/drawer1green.PNG);
+}
+
+.bedCat4 .item1 .itempic:hover{
+    background-image: url(images/Drawers/drawer1InRoom.PNG);
+}
+
+.bedCat4 .item2 .itempic{
+    background-image: url(images/Drawers/drawer2.PNG);
+}
+
+.bedCat4 .item2 .itempic:hover{
+    background-image: url(images/Drawers/drawer2InRoom.PNG);
+}
+
+.bedCat4 .item3 .itempic{
+    background-image: url(images/Drawers/drawer3grey.PNG);
+}
+
+.bedCat4 .item3 .itempic:hover{
+    background-image: url(images/Drawers/drawer3InRoom.PNG);
+}
+
+.bedCat4 .item4 .itempic{
+    background-image: url(images/Drawers/drawer4white.PNG);
+}
+
+.bedCat4 .item4 .itempic:hover{
+    background-image: url(images/Drawers/drawer4whiteInRoom.PNG);
+}
+
+.bedCat4 .item5 .itempic{
+    background-image: url(images/Drawers/drawer5black.PNG);
+}
+
+.bedCat4 .item5 .itempic:hover{
+    background-image: url(images/Drawers/drawer5InRoom.PNG);
+}
+
+.bedCat4 .item6 .itempic{
+    background-image: url(images/Drawers/drawer6.PNG);
+}
+
+.bedCat4 .item6 .itempic:hover{
+    background-image: url(images/Drawers/drawer6InRoom.PNG);
+}
+
+.bedCat5 .item1 .itempic{
+    background-image: url(images/Chairs/chair1green.PNG);
+}
+
+.bedCat5 .item1 .itempic:hover{
+    background-image: url(images/Chairs/chair1greenInRoom.PNG);
+}
+
+.bedCat5 .item2 .itempic{
+    background-image: url(images/Chairs/chair2white.PNG);
+}
+
+.bedCat5 .item2 .itempic:hover{
+    background-image: url(images/Chairs/chair2InRoom.PNG);
+}
+
+.bedCat5 .item3 .itempic{
+    background-image: url(images/Chairs/chair3.PNG);
+}
+
+.bedCat5 .item3 .itempic:hover{
+    background-image: url(images/Chairs/chair3InRoom.PNG);
+}
+
+.bedCat5 .item4 .itempic{
+    background-image: url(images/Chairs/chair4.PNG);
+}
+
+.bedCat5 .item4 .itempic:hover{
+    background-image: url(images/Chairs/chair4InRoom.PNG);
+}
+
+.bedCat5 .item5 .itempic{
+    background-image: url(images/Chairs/chair5.PNG);
+}
+
+.bedCat5 .item5 .itempic:hover{
+    background-image: url(images/Chairs/chair5InRoom.PNG);
+}
+
+.bedCat5 .item6 .itempic{
+    background-image: url(images/Chairs/chair6black.PNG);
+}
+
+.bedCat5 .item6 .itempic:hover{
+    background-image: url(images/Chairs/chair6InRoom.PNG);
+}
+
+.kitchenCat1 .item1 .itempic{
+    background-image: url(images/Cabinets/cabinet1brownW.png);
+}
+
+.kitchenCat1 .item1 .itempic:hover{
+    background-image: url(images/Cabinets/Cabinet1inRoom.PNG);
+}
+
+.kitchenCat1 .item2 .itempic{
+    background-image: url(images/Cabinets/cabinet2white.PNG);
+}
+
+.kitchenCat1 .item2 .itempic:hover{
+    background-image: url(images/Cabinets/cabinet2InRoom.PNG);
+}
+
+.kitchenCat1 .item3 .itempic{
+    background-image: url(images/Cabinets/cabinet3grey.png);
+}
+
+.kitchenCat1 .item3 .itempic:hover{
+    background-image: url(images/Cabinets/cabinet3InRoom.png);
+}
+
+.kitchenCat1 .item4 .itempic{
+    background-image: url(images/Cabinets/cabinet4brownblack.png);
+}
+
+.kitchenCat1 .item4 .itempic:hover{
+    background-image: url(images/Cabinets/cabinet4inRoom.PNG);
+}
+
+.kitchenCat1 .item5 .itempic{
+    background-image: url(images/Cabinets/cabinet5beige.PNG);
+}
+
+.kitchenCat1 .item5 .itempic:hover{
+    background-image: url(images/Cabinets/cabinet5InRoom.PNG);
+}
+
+.kitchenCat1 .item6 .itempic{
+    background-image: url(images/Cabinets/cabinet6redblack.png);
+}
+
+.kitchenCat1 .item6 .itempic:hover{
+    background-image: url(images/Cabinets/cabinet6InRoom.PNG);
+}
+
+.kitchenCat2 .item1 .itempic{
+    background-image: url(images/DiningTables/dining1.png);
+}
+
+.kitchenCat2 .item1 .itempic:hover{
+    background-image: url(images/DiningTables/dining1InRoom.PNG);
+}
+
+.kitchenCat2 .item2 .itempic{
+    background-image: url(images/DiningTables/dining2.png);
+}
+
+.kitchenCat2 .item2 .itempic:hover{
+    background-image: url(images/DiningTables/dining2InRoom.png);
+}
+
+.kitchenCat2 .item3 .itempic{
+    background-image: url(images/DiningTables/dining3.png);
+}
+
+.kitchenCat2 .item3 .itempic:hover{
+    background-image: url(images/DiningTables/dining3InRoom.PNG);
+}
+
+.kitchenCat2 .item4 .itempic{
+    background-image: url(images/DiningTables/dining4.png);
+}
+
+.kitchenCat2 .item4 .itempic:hover{
+    background-image: url(images/DiningTables/dining4InRoom.PNG);
+}
+
+.kitchenCat2 .item5 .itempic{
+    background-image: url(images/DiningTables/dining5.png);
+}
+
+.kitchenCat2 .item5 .itempic:hover{
+    background-image: url(images/DiningTables/dining5InRoom.PNG);
+}
+
+.kitchenCat2 .item6 .itempic{
+    background-image: url(images/DiningTables/dining6.png);
+}
+
+.kitchenCat2 .item6 .itempic:hover{
+    background-image: url(images/DiningTables/dining6InRoom.PNG);
+}
+
+.kitchenCat3 .item1 .itempic{
+    background-image: url(images/Islands/Island1.PNG);
+}
+
+.kitchenCat3 .item1 .itempic:hover{
+    background-image: url(images/Islands/Island1inRoom.PNG);
+}
+
+.kitchenCat3 .item2 .itempic{
+    background-image: url(images/Islands/Island2.PNG);
+}
+
+.kitchenCat3 .item2 .itempic:hover{
+    background-image: url(images/Islands/Island2inRoom.PNG);
+}
+
+.kitchenCat3 .item3 .itempic{
+    background-image: url(images/Islands/Island3Grey.PNG);
+}
+
+.kitchenCat3 .item3 .itempic:hover{
+    background-image: url(images/Islands/Island3GreyinRoom.PNG);
+}
+
+.kitchenCat3 .item4 .itempic{
+    background-image: url(images/Islands/Island4.PNG);
+}
+
+.kitchenCat3 .item4 .itempic:hover{
+    background-image: url(images/Islands/Island4inRoom.PNG);
+}
+
+.kitchenCat3 .item5 .itempic{
+    background-image: url(images/Islands/Island5.PNG);
+}
+
+.kitchenCat3 .item5 .itempic:hover{
+    background-image: url(images/Islands/Island5inRoom.PNG);
+}
+
+.kitchenCat3 .item6 .itempic{
+    background-image: url(images/Islands/Island6.PNG);
+}
+
+.kitchenCat3 .item6 .itempic:hover{
+    background-image: url(images/Islands/Island6inRoom.PNG);
+}
+
+.kitchenCat4 .item1 .itempic{
+    background-image: url(images/Shelves/Shelve1.PNG);
+}
+
+.kitchenCat4 .item1 .itempic:hover{
+    background-image: url(images/Shelves/Shelve1inRoom.PNG);
+}
+
+.kitchenCat4 .item2 .itempic{
+    background-image: url(images/Shelves/Shelve2.PNG);
+}
+
+.kitchenCat4 .item2 .itempic:hover{
+    background-image: url(images/Shelves/Shelve2inRoom.PNG);
+}
+
+.kitchenCat4 .item3 .itempic{
+    background-image: url(images/Shelves/Shelve3Grey.PNG);
+}
+
+.kitchenCat4 .item3 .itempic:hover{
+    background-image: url(images/Shelves/Shelve3GreyinRoom.PNG);
+}
+
+.kitchenCat4 .item4 .itempic{
+    background-image: url(images/Shelves/Shelve4.PNG);
+}
+
+.kitchenCat4 .item4 .itempic:hover{
+    background-image: url(images/Shelves/Shelve4inRoom.PNG);
+}
+
+.kitchenCat4 .item5 .itempic{
+    background-image: url(images/Shelves/Shelve5.PNG);
+}
+
+.kitchenCat4 .item5 .itempic:hover{
+    background-image: url(images/Shelves/Shelve5inRoom.PNG);
+}
+
+.kitchenCat4 .item6 .itempic{
+    background-image: url(images/Shelves/Shelve6.PNG);
+}
+
+.kitchenCat4 .item6 .itempic:hover{
+    background-image: url(images/Shelves/Shelve6inRoom.PNG);
+}
+
+.kitchenCat5 .item1 .itempic{
+    background-image: url(images/Blinds/Blind1.PNG);
+}
+
+.kitchenCat5 .item1 .itempic:hover{
+    background-image: url(images/Blinds/Blind1inRoom.PNG);
+}
+
+.kitchenCat5 .item2 .itempic{
+    background-image: url(images/Blinds/Blind2.PNG);
+}
+
+.kitchenCat5 .item2 .itempic:hover{
+    background-image: url(images/Blinds/Blind2inRoom.PNG);
+}
+
+.kitchenCat5 .item3 .itempic{
+    background-image: url(images/Blinds/Blind3.PNG);
+}
+
+.kitchenCat5 .item3 .itempic:hover{
+    background-image: url(images/Blinds/Blind3inRoom.PNG);
+}
+
+.kitchenCat5 .item4 .itempic{
+    background-image: url(images/Blinds/Blind4.PNG);
+}
+
+.kitchenCat5 .item4 .itempic:hover{
+    background-image: url(images/Blinds/Blind4inRoom.PNG);
+}
+
+.kitchenCat5 .item5 .itempic{
+    background-image: url(images/Blinds/Blind5.PNG);
+}
+
+.kitchenCat5 .item5 .itempic:hover{
+    background-image: url(images/Blinds/Blind5inRoom.PNG);
+}
+
+.kitchenCat5 .item6 .itempic{
+    background-image: url(images/Blinds/Blind6.PNG);
+}
+
+.kitchenCat5 .item6 .itempic:hover{
+    background-image: url(images/Blinds/Blind6inRoom.PNG);
+}
+
+.p-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 103%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.p-modal-content {
+    background-color: #fefefe;
+    margin: 3% 2% 0% 3%;
+    border: 1px solid #888;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: minmax(1fr, 1fr) minmax(1.02fr, 1.03fr) minmax(0.6fr, 0.7fr) minmax(0.4fr, 0.4fr);
+    grid-template-columns: 1fr 1fr 0.1fr;
+}
+
+#p-modal-image{
+    grid-area: 1 / 1 / 5 / 2;
+    float: left;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#p-modal-price{
+    grid-area: 4 / 1 / 5 / 2;
+    z-index: 1;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: Tahoma;
+    padding-left: 10%;
+    margin-top: 7%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#p-modal-title{
+    grid-area: 1 / 2 / 2 / 3;
+    text-align:left;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 4%;
+    padding-left: 2%;
+}
+
+#p-modal-description{
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: bold;
+}
+
+#p-desc{
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 8px;
+    text-align: left;
+    font-size: 120%;
+    padding-top: 12%;
+    color:#3b404c;
+    font-style: italic;
+}
+
+#p-sizes{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#sizes{
+    width: 98%;
+    height: 98%;
+}
+
+#colors-available{
+    grid-area: 3 / 2 / 4 / 3;
+    padding-left: 8%;
+}
+
+#colors-available img{
+    width: 10em;
+}
+
+#buttons{
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.p-modal button{
+    width: 38%;
+    text-align: center;
+    font-size: 150%;
+    line-height: 235%;
+    height: 65%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.p-modal button:hover{
+    box-shadow: 3px 3px 3px grey;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+#Addcart, #Addwishlist{
+    width: 18%;
+    float: left;
+    padding-top: 3%;
+    padding-left: 6%;
+}
+
+#Addwishlist{
+    padding-top: 2%;
+    padding-left: 1%;
+}
+
+.close{
+    grid-area: 1 / 3 / 2 / 4;
+    color: #aaaaaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-modal{
+    width: 43%;
+    height: 35%;
+    background-color:#f5f5f5;
+    border-radius: 10px;
+    box-shadow: 4px 6px 15px 4px black;
+    position: absolute;
+    top: 47%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    color: black;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.form-modal img{
+    width: 12%;
+    margin-top: 3%;
+}
+
+#form-title{
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+#form-message{
+    font-size: 1.8em;
+    margin-bottom: 6%;
+}
+
+.open_pop{
+    visibility: visible;
+}
+
+.close_btn{
+    width: 13%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:#beb7b3;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.close_btn:hover{
+    scale: 1.02;
+    box-shadow: 1px 1px 1px 1px gray;
+    cursor: pointer;
+}
+
+.mockups{
+    grid-area: 3 / 1 / 4 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto-fit);
+    grid-gap: 2em;
+    padding: 3%;
+}
+
+#intro_mock{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#home_mock{
+    grid-area: 2 / 1 / 3 / 2;
+    height: 2800px;
+}
+
+#sub_mock{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#ourstory_mockup_mock{
+    grid-area: 4 / 1 / 5 / 2;
+
+}
+
+#colors{
+    grid-area: 5 / 1 / 6 / 2;
+    height: 800px;
+}
+
+#colors table{
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
+
+.color_stains{
+    height: 5%;
+}
+
+.colors_names{
+    height: 2%;
+    font-weight: bold;
+}
+
+#colors img{
+    width: 100%;
+    height: 88%;
+}
+
+#colors p{
+    margin-top: 3%;
+    text-align: center;
+}
+
+#table_break{
+    height: 8%;
+}
+
+#refrences{
+    grid-area: 6 / 1 / 7 / 2;
+}
+
+#refrences h1{
+    margin-bottom: 0%;
+}
+
+#refrences h3{
+    text-align: center;
+    font-size: 1.5em;
+    color: brown;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#refrences ul{
+    margin-top: 0%;
+}
+
+#intro_mock, #home_mock, #sub_mock, #ourstory_mockup_mock,#colors, #refrences, #maintainability{
+    padding: 2% 4% 2% 4%;
+    font-size: 1.4em;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px gray;
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    font-size: 2.5em;
+    margin-bottom: 2%;
+}
+
+#home_mock img{ 
+    float: left;
+    width: 48%;
+    margin-top: 2%;
+    height: 89%;
+}
+
+#home_mock h2{
+    margin-bottom: 1%;
+}
+
+#head_home, #homecont1, #homecont2, #regform, #foot_home{
+    width: 51%;
+    margin-top: -0.8%;
+    float: left;
+}
+
+#head_home h2{
+    padding-top: 2%;
+    padding-left: 1%;
+    margin-bottom: 0%;
+}
+
+#homecont1{
+    margin-top: 5%;
+    margin-bottom: 16%;
+}
+
+#homecont2{
+    margin-bottom: 9%;
+}
+
+#formreg p{
+    padding-bottom: 5.5%;
+}
+
+#formreg img{
+    width: 45%;
+    margin-bottom: 1.5%;
+}
+
+.mockups span{
+    font-weight: bold;
+    color: brown;
+}
+
+#sub_mock table{
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#sub_mock table td{
+    border: 8px solid #f5f5f5;
+    width: 25%;
+    text-align: center;
+}
+
+#sub_mock table img{
+    width: 99%;
+}
+
+#sub_mock h2{
+    margin: 0;
+}
+
+#sub_mock p{
+    margin-bottom: 1%;
+}
+
+#popupimg img{
+    float: left;
+    width: 45%;
+}
+#popupcont{
+    float:right;
+    width: 45%;
+}
+
+#popup_mock{
+    margin-top: 2%;
+}
+
+#hometop img{
+    width: 600px;
+}
+
+#ourstory_mockup_mock img{
+    width: 100%;
+    margin-top: 5%;
+}
+
+#ourstorycont{
+    width: 46%;
+    margin-right: 2%;
+    padding-left: 2;
+    float: left;
+}
+
+#mockupcont{
+    float: right;
+    width: 50%;
+}
+
+#mockupcont img{
+    height: 50%;
+}

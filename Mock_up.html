@@ -1,0 +1,214 @@
+<!-- 
+    WEB FUNDEMENTALS PROJECT 
+        Done By:
+        #Mayyar Sakhnini - 202200225.
+        #Khadija Abdulla - 202201013.
+        #Manar Alsetrawi - 202200412.
+        #Ayah Meftah     - 202201592.
+        #Alaa Aljamri    - 202201043.
+
+    HTML File for the Mock ups page - Mock_up.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- The head includes the page titile Linking css and js files, and some extrenal libraries -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Of Decoria</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="icon" href="images/furniture.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<!-- This is the page body where all the main content is provided -->
+<body onload="setUsername()">
+    <div id="container_our_mock">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <img src="images/logopic.png" id="logopic" alt="Decoria Logo"><img src="images/logoname.png" id="logoname" alt="Decoria">
+            </div>
+
+            <div class="menu">
+                <a href="index.html" target="_self">Home</a>
+                <div class="dropdown">
+                  <button class="dropmain">
+                    Furniture ↓
+                  </button>
+                  <div class="dropdowncontent">
+                    <a href="living_room.html" target="_self">Living Room</a>
+                    <a href="bedroom.html" target="_self">Bedroom</a>
+                    <a href="kitchen.html" target="_self">Kitchen</a>
+                  </div>
+                </div>
+                <a href="our_story.html" target="_self">Our Story</a>
+                <a href="Mock_up.html" target="_self">Making of Decoria</a>
+            </div>
+
+            <div class="right_header">
+                <img src="images/icons/wishlist.png" id="wishlist" alt="Wishlist Icon">
+                <img src="images/icons/cart.png" id="cart" alt="Shopping Cart Icon">
+                <img src="images/icons/user.png" id="user" alt="User Profile Icon">
+                <a href="index.html#register_login" id="signup-link">Sign Up/Log in</a><p id="username"></p>
+            </div>
+        </div>
+
+        <div class="makingOf_sub_bg"></div>
+
+        <div class="mockups">
+            <div id="intro_mock">
+                <h1>Introduction</h1>
+                <p><span>Welcome to our mockup page!</span> Here, we'll take a deep dive into all the exciting aspects of Decoria's design journey. We'll discuss our thoughtfully crafted mockup design choices, carefully curated color palette selections, and the wide range of products we offer. Additionally, we'll explore the functionality and services available on our website. But that's not all! We're also proud to share how we've made Decoria accessible to individuals with disabilities, ensuring inclusivity for all. Join us as we take you on a captivating journey through the creation of Decoria, revealing the passion and dedication behind its development.</p>
+            </div>
+            <br>
+            <div id="home_mock">
+                <h1>Home Page</h1>
+                <img src="images/mockup/home.png">
+                <div id="head_home">
+                    <h2>Header</h2>
+                    <span>(Repeated on all web pages)</span>
+                    <p>Our website's header has a clean and elegant design with a complementary white color scheme. The logo, featuring the website's name, is positioned on the left side as two images. In the middle, you'll find the navigation links for easy browsing. A drop-down list in the second navigation link with room category links allows seamless navigation. Hovering over a link in the drop-down list underlines it and changes the background color to grey. On the right side, three icons (Wishlist, Cart, User) and a "Sign Up/Log in" link provide functionality for saving favorites, managing the cart, and accessing the registration form. Hovering over the Wishlist and Cart icons triggers a scaling effect. Navigation links are underlined on hover, and the Sign Up/Log in link changes color and background. After registration, the Sign Up/Log in link is replaced by the first name.</p>
+                </div>
+                <div id="homecont1">
+                    <h2>Guiding Users Eyes</h2>
+                    <p>The homepage features a visible search bar and a "Shop Now" button to guide users. The top section is divided into two parts, with an image containing the website’s slogan on the left to balance the search bar and button, and a captivating furniture GIF on the right. A bar separates the top section from the main content of the webpage.</p>
+                </div>
+                <div id="homecont2">
+                    <h2>Easy Room Navigation</h2>
+                    <p>Here we have three sections for each room type (Living Room, Bedroom, Kitchen) in which we designed a clickable picture for each type with a hyperlink that takes the user directly to the room’s page.  Also, for each room type there are 5 categories in which we made them as light brown rectangle boxes with links inside them that are when clicked, users will be taken to the clicked category’s section. Hovering the cursor over the category boxes will show a shadow behind them and scale will change from 1.0em to 1.03em.</p>
+                </div>
+                <div id="formreg">
+                    <h2>Registration Form</h2>
+                    <p>At the end of the Home page, we have created a visually appealing registration form that seamlessly integrates with the website's design. The form features a white Bold Italic title in a light brown box which is chosen for their aesthetic compatibility. Behind the form, we added a white-Paige background image. It includes five input fields (First Name, Last Name, Password, Phone Number, and Email Address) with labels acting as placeholders within the fields. When users start entering information, the labels elegantly shift to the top for improved clarity. The input fields are designed as white boxes with thin black borders to ensure legibility. For interactivity, hovering over the submit button triggers a color change to green, accompanied by white text, while the button scales up slightly. The form has validation checks, such as a minimum of three letters for the first name and an eight-digit phone number requirement. After submission, a small pop-up appears to indicate the registration's success or provide necessary steps for completion. In case of success, the first name replaces the "Sign Up/Log in" link in the header.</p>
+                    <img src="images/mockup/formafter.png">
+                </div>
+                <div id="foot_home">
+                    <h2>Footer</h2>
+                    <span>(Repeated on all web pages)</span>
+                    <p>We have created a minimalistic footer design that contains online generated clickable social media buttons. To maintain a visually appealing aesthetic, we have opted for a brown color scheme. The footer includes optimized icons for Instagram, Twitter, and WhatsApp. A copyright signature is positioned in the right corner, providing visitors with instant access to essential legal information. As an interactive touch, hovering over the icons triggers a subtle scale transformation from 1.0 to 1.08.</p>
+                </div>
+            </div>
+            <br>
+            <div id="sub_mock">
+                <h1>Sub-topics Pages</h1>
+                <p>In the subtopic’s pages, we designed an image at the top of the page under the header. Moreover, under the room’s name in the image a search bar was added with a placeholder inside it indicating that it’s used for searching products. There are five light brown and grey coloured boxes that hold the room’s product categories as hyperlinks in white text with a shadow. The boxes colours were chosen precisely so that it matches the top picture and other elements of the page. When a user hovers on these hyperlinks the text colour changes to black, and it gets underlined showing that’s a clickable link. Also, the text’s scale will get a little bigger and the shadow colour will change to WhiteSmoke. Clicking on the hyperlinks inside the boxes navigates the user to the specified product category. Scrolling down the subtopic’s page furtherly will display the products categories, in which each category will have its products as a separate section. For each room there are five categories with six products per category. Additionally, each category section has the category name in bold black colour with an icon describing it. Furthermore, each product is displayed in a box that has product’s name, image, rating, and price. The product name is displayed at the centre of the box, on the corner left there will be the rating yellow stars and the price shown at the right corner of the box. When hovering over the box itself a black shadow shows up, and the product’s image changes to an image showing how the product looks when it’s assembled and installed in the room.</p>
+                <table>
+                    <tr>
+                        <td><img src="images/mockup/livingroom.png"></td>
+                        <td><img src="images/mockup/bedroom.png"></td>
+                        <td><img src="images/mockup/kitchen.png"></td>
+                    </tr>
+                    <tr>
+                        <td><span>Figure 1: Living Room Page Mock Up</span></td>
+                        <td><span>Figure 2: Bedroom Page Mock Up</span></td>
+                        <td><span>Figure 3: Kitchen Page Mock Up</span></td>
+                    </tr>
+                </table>
+                <h2>Living Room Page</h2>
+                <p>As it’s shown in Figure 1, the Living Room page will contain a background image at the top with a picture that contains some related living room furniture. Right under that image there are five boxes with hyperlinks navigating the user for each category which are Sofas, Display Units, Side Tables, Shelving Units and Curtains. Going down the page, there will be a title for each category with an icon next to it that shows the modern designed living room product.</p>
+                <h2>Bedroom Page</h2>
+                <p>In Figure 2, the Bedroom page has a different background image with an aesthetically decorated bedroom. The text boxes under it show the bedroom categories which are Beds, Wardrobes, Desks, Drawers and Desk Chairs. Adding to that, scrolling down the page shows the titles for every bedroom category with an icon indicating the selling products. </p>
+                <h2>Kitchen Page</h2>
+                <p>Figure 3 demonstrates the Kitchen’s page. In the background image we added a picture of a simple designed kitchen, along with the five categories text box links which are Cabinets, Dining Tables, Islands, Shelves and Blinds. At the main part of the page, each category includes a title at the top with an icon on the right that basically shows the product. </p>
+                <div id="popup_mock">
+                    <img id="popupimg" src="images/mockup/popup.png">
+                    <div id="popupcont">
+                       <h2>Pop Up</h2>
+                       <p>Upon clicking on a product box, a pop-up will appear presenting the product image on the left. On the right, the product name will be displayed in black at the top, accompanied by a description underneath. A section will be dedicated to showcasing the available colours of the product, presenting the product image in different colour variations. The pop-up will also feature two buttons; a trolley button, which allows the user to add the item to their cart, and a heart button, which enables users to add the product to their wish list. Hovering over the buttons will trigger a black shadow effect and increase the scale size. By incorporating these elements, we strive to offer users a seamless and immersive browsing experience, enabling them to explore the product details without leaving the main page.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="ourstory_mockup_mock">   
+                <div id="ourstorycont">
+                    <h1>Our Story Page</h1>
+                    <p>On our "Our Story" page, we have implemented a simple and engaging design. It features a custom-designed image at the top, followed by four sections with clear titles and descriptions. <br><br>These sections cover a summary of our website creation journey, overcoming challenges, lessons learned, and technical insights. The header is included for consistency across pages. <br><br>This layout ensures easy navigation and understanding for users, providing a seamless reading experience. At the end of the page, a footer is added that’s default in all the pages.</p>
+                    <img src="images/mockup/ourstory.png" >
+                    <br><br>
+                    <h1>Maintainability</h1>
+                    <p>To ensure maintainable code, we followed key practices. We utilized proper indentation and added comments for clarity and future maintenance. HTML tags accurately reflected content purpose, while external CSS and JavaScript files were preferred over inline methods, enabling easy updates without affecting HTML structure. Meaningful naming conventions for classes and IDs aided developers in quickly finding specific styles. CSS code was organized by grouping related styles together, facilitating efficient style discovery. Additionally, we prioritized creating appropriately named reusable functions, enhancing code reusability.</p>
+                </div>
+                <div id="mockupcont">
+                    <h1>Mockup Page</h1>
+                    <p>On the mock-up page, we have provided a comprehensive overview of our website creation process, including detailed designs and colour justifications. The page starts with a background image displaying our group members. The page title is positioned in the centre of the image with a dark grey background, creating a visually appealing header. As we move down the page, there are seven white text boxes, each dedicated to explaining the design and content. Each text box begins with a title, indicating the element being discussed. To enhance clarity, we have included images and black text within each box, providing visual representations. The text is presented in light colours to ensure readability, while the chosen images and colour codes complement the overall design aesthetic.</p>
+                    <img src="images/mockup/mock.png">
+                </div>
+            </div>
+
+            <div id="colors">
+                <h1>Colors Used</h1>
+                <table>
+                    <tr class="color_stains">
+                        <td class="color_stains"><img src="images/colors/black.png"></td>
+                        <td class="color_stains"><img src="images/colors/3b404c.png"></td>
+                        <td class="color_stains"><img src="images/colors/grey.png"></td>
+                        <td class="color_stains"><img src="images/colors/aaaaaa.png"></td>
+                        <td class="color_stains"><img src="images/colors/b7a9a0.png"></td>
+                        <td class="color_stains"><img src="images/colors/beb7b3.png"></td>
+                        <td class="color_stains"><img src="images/colors/EEEAE6.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="colors_names">#000000</td>
+                        <td class="colors_names">#3b404c</td>
+                        <td class="colors_names">#808080</td>
+                        <td class="colors_names">#aaaaaa</td>
+                        <td class="colors_names">#b7a9a0</td>
+                        <td class="colors_names">#beb7b3</td>
+                        <td class="colors_names">#eeeae6</td>
+                    </tr>
+                    <tr id="table_break"></tr>
+                    <tr>
+                        <td class="color_stains"><img src="images/colors/darkRed.png"></td>
+                        <td class="color_stains"><img src="images/colors/49994c.png"></td>
+                        <td class="color_stains"><img src="images/colors/7F5539.png"></td>
+                        <td class="color_stains"><img src="images/colors/9c6644.png"></td>
+                        <td class="color_stains"><img src="images/colors/yellow.png"></td>
+                        <td class="color_stains"><img src="images/colors/white.png"></td>
+                        <td class="color_stains"><img src="images/colors/whitesmoke.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="colors_names">#8b0000</td>
+                        <td class="colors_names">#49994c</td>
+                        <td class="colors_names">#7f5539</td>
+                        <td class="colors_names">#9c6644</td>
+                        <td class="colors_names">#ffff00</td>
+                        <td class="colors_names">#ffffff</td>
+                        <td class="colors_names">#f5f5f5</td>
+                    </tr>
+                </table>
+                <p>We have carefully selected a range of white and brown colours for our product variations. The diverse white range was 
+                    chosen to create a sense of simplicity and class, avoiding overwhelming the user with an excessive colour palette. 
+                    The addition of various shades of brown serves to complement the light colours while also reflecting the natural hues 
+                    of wood and our products as well. This colour scheme aims to create a visually appealing and harmonious browsing experience for our users.</p>
+            </div>
+
+            <div id="refrences">
+                <h1>References</h1>
+                <br>
+                <ul>
+                    <li>Blinds, E. (n.d.). Privacy policy. English Blinds. <a href=https://www.englishblinds.co.uk/privacy>https://www.englishblinds.co.uk/privacy</a> (Kitchen blinds)</li>
+                    <li>The Collaborative Interface Design Tool. Figma. (n.d.).<a href="https://www.figma.com/">//www.figma.com/</a> (Mock Ups)</li>
+                    <li>Free icons and stickers - millions of images to download. Flaticon. (n.d.).<a href="https://www.flaticon.com/"> https://www.flaticon.com/ </a>(Website icons)</li>
+                    <li>Gabriel. (2022, October 30). Input by G4B413L made with CSS. made with CSS | Uiverse.io.<a href="https://uiverse.io/G4b413l/mean-stingray-9"> https://uiverse.io/G4b413l/mean-stingray-9</a>(Form labels)</li>
+                    <li>Google. (n.d.). Material symbols and icons. Google Fonts. <a href=" https://fonts.google.com/icons"> https://fonts.google.com/icons </a>(Search icon)</li>
+                    <li>Shop for Home Furnishing Solutions - Ikea bahrain. IKEA. (n.d.).<a href= "https://www.ikea.com/bh/en/campaigns/ikea-sale-from-20-to-70-pub1ac86100?gad_source=1&gclid=Cj0KCQiAyeWrBhDDARIsAGP1mWQZit7IuvLjmZsQ1AxwLkXW2oeGMLWRKUxZPiYqt3nRJ1IzkEA-pIoaAie3EALw_wcB
+                 "> https://www.ikea.com/bh/en/</a>(Products images & details)</li>
+   
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer footer_our_mock">
+            <a href="#"><img src="images/icons/instagramicon.png" alt="Instagram icon"></a>
+            <a href="#"><img src="images/icons/twittericon.png" alt="Twitter icon"></a>
+            <a href="#"><img src="images/icons/whatsappicon.png" alt="Whatsapp icon"></a>
+            
+            <p>Decoria © 2023. All rights reserved.</p>
+        </div>
+    </div>
+</body>
